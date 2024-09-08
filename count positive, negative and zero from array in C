@@ -1,0 +1,25 @@
+include <stdio.h>
+
+int main(void) {
+  int arr[10],pos=0,neg=0,zero=0,i,n;
+  printf("Enter the no. of element you want in array ");
+  scanf("%d",&n);
+  printf("Enter the %d element ",n);
+  for (i=0;i<n;i++){
+    scanf("%d",&arr[i]);
+    if(arr[i]>0){
+      pos++;
+    }
+    else if (arr[i]<0){
+      neg++;
+    }
+    else{
+      zero++;
+    }
+  }
+  printf("There is %d positive no. \n",pos);
+  printf("There is %d negative no. \n",neg);
+  printf("There is %d zero no. \n",zero);
+
+  return 0;
+}
